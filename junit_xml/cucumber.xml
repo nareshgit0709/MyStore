@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="110.300395">
+<testcase classname="Login Feature" name="Update Personal Information (First Name) in My Account" time="43.884736">
+<system-out><![CDATA[Given user is on Home Page..................................................passed
+When Naigate to signin page.................................................passed
+And user log into app.......................................................passed
+When user navigate to personal information page.............................passed
+And user Edit the firstname as "testfirst"..................................passed
+And user click on save button...............................................passed
+Then Validate the success massage...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Order T-Shirt" time="66.415659">
+<system-out><![CDATA[Given user is on Home Page..................................................passed
+When Naigate to signin page.................................................passed
+And user log into app.......................................................passed
+When user click on Tshirt menu..............................................passed
+And Uer click on selected product...........................................passed
+And Add procudt to cart.....................................................passed
+And user click on proceed to checkout.......................................passed
+And user should navigate to summary and click on proceed to checkout........passed
+And user should navigate to address confirmation stage and click on proceed to checkout.passed
+And user should navigate to SHIPPING details and click on checkbox and proceed to checkout.passed
+And select payment method as pay by check...................................passed
+Then user click on I confirm my order.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
