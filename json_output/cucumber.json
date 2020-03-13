@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31983701040,
+              "duration": 23463642232,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 5066927805,
+              "duration": 4770114058,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 3371367489,
+              "duration": 4492512811,
               "status": "passed"
             },
             "line": 6,
@@ -57,7 +57,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1724363816,
+              "duration": 1532766585,
               "status": "passed"
             },
             "line": 9,
@@ -69,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 329884453,
+              "duration": 335767824,
               "status": "passed"
             },
             "line": 10,
@@ -87,7 +87,7 @@
           },
           {
             "result": {
-              "duration": 1342483419,
+              "duration": 1360353411,
               "status": "passed"
             },
             "line": 11,
@@ -99,13 +99,25 @@
           },
           {
             "result": {
-              "duration": 66008194,
+              "duration": 64467825,
               "status": "passed"
             },
             "line": 12,
-            "name": "Validate the success massage.",
+            "name": "Validate the success massage",
             "match": {
               "location": "PersonalInfoSteps.validate_the_success_massage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34132138,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "validate changed first name on top of the page",
+            "match": {
+              "location": "PersonalInfoSteps.validate_changed_first_name_on_top_of_the_page()"
             },
             "keyword": "Then "
           }
@@ -120,7 +132,7 @@
         "steps": [
           {
             "result": {
-              "duration": 43267232426,
+              "duration": 18129368767,
               "status": "passed"
             },
             "line": 4,
@@ -132,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 2314532816,
+              "duration": 2157809820,
               "status": "passed"
             },
             "line": 5,
@@ -144,7 +156,7 @@
           },
           {
             "result": {
-              "duration": 3394374162,
+              "duration": 2874374827,
               "status": "passed"
             },
             "line": 6,
@@ -157,7 +169,7 @@
         ]
       },
       {
-        "line": 14,
+        "line": 15,
         "name": "Order T-Shirt",
         "description": "",
         "id": "login-feature;order-t-shirt",
@@ -166,10 +178,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3058843241,
+              "duration": 2567136322,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "user click on Tshirt menu",
             "match": {
               "location": "DashBoaardSteps.user_click_on_Tshirt_menu()"
@@ -178,10 +190,10 @@
           },
           {
             "result": {
-              "duration": 2871619972,
+              "duration": 2112821002,
               "status": "passed"
             },
-            "line": 16,
+            "line": 17,
             "name": "Uer click on selected product",
             "match": {
               "location": "DashBoaardSteps.uer_click_on_selected_product()"
@@ -190,10 +202,10 @@
           },
           {
             "result": {
-              "duration": 205085362,
+              "duration": 100846633,
               "status": "passed"
             },
-            "line": 17,
+            "line": 18,
             "name": "Add procudt to cart",
             "match": {
               "location": "DashBoaardSteps.add_procudt_to_cart()"
@@ -202,10 +214,10 @@
           },
           {
             "result": {
-              "duration": 3093320921,
+              "duration": 2888890428,
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "user click on proceed to checkout",
             "match": {
               "location": "DashBoaardSteps.user_click_on_proceed_to_checkout()"
@@ -214,10 +226,10 @@
           },
           {
             "result": {
-              "duration": 1590038139,
+              "duration": 1426496745,
               "status": "passed"
             },
-            "line": 19,
+            "line": 20,
             "name": "user should navigate to summary and click on proceed to checkout",
             "match": {
               "location": "DashBoaardSteps.user_should_navigate_to_summary_and_click_on_proceed_to_checkout()"
@@ -226,10 +238,10 @@
           },
           {
             "result": {
-              "duration": 1276711286,
+              "duration": 1160550162,
               "status": "passed"
             },
-            "line": 20,
+            "line": 21,
             "name": "user should navigate to address confirmation stage and click on proceed to checkout",
             "match": {
               "location": "DashBoaardSteps.user_should_navigate_to_address_confirmation_stage_and_click_on_proceed_to_checkout()"
@@ -238,10 +250,10 @@
           },
           {
             "result": {
-              "duration": 1986165308,
+              "duration": 1534498030,
               "status": "passed"
             },
-            "line": 21,
+            "line": 22,
             "name": "user should navigate to SHIPPING details and click on checkbox and proceed to checkout",
             "match": {
               "location": "DashBoaardSteps.user_should_navigate_to_SHIPPING_details_and_click_on_checkbox_and_proceed_to_checkout()"
@@ -250,10 +262,10 @@
           },
           {
             "result": {
-              "duration": 1337377838,
+              "duration": 1696761676,
               "status": "passed"
             },
-            "line": 22,
+            "line": 23,
             "name": "select payment method as pay by check",
             "match": {
               "location": "DashBoaardSteps.select_payment_method_as_pay_by_check()"
@@ -262,13 +274,37 @@
           },
           {
             "result": {
-              "duration": 2020357662,
+              "duration": 2062763579,
               "status": "passed"
             },
-            "line": 23,
+            "line": 24,
             "name": "user click on I confirm my order",
             "match": {
               "location": "DashBoaardSteps.user_click_on_I_confirm_my_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2124419730,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user navigate to Order history page",
+            "match": {
+              "location": "DashBoaardSteps.user_navigate_to_Order_history_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59249885,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Validate the order refference",
+            "match": {
+              "location": "DashBoaardSteps.Validate_the_order_refference()"
             },
             "keyword": "Then "
           }

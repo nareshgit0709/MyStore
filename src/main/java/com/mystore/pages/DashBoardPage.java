@@ -41,7 +41,7 @@ public class DashBoardPage extends TestBase{
 	@FindBy(name="cgv")
 	public WebElement termsOfservice;
 
-	@FindBy(xpath="//a[contains(@title,'Pay by bank wire')]/span[contains(text(),'(order processing will be longer)')]")
+	@FindBy(xpath="//a[contains(@title,'Pay by check.')]/span[contains(text(),'(order processing will be longer)')]")
 	public WebElement paymenetMode;
 
 	@FindBy(xpath="//button[@type='submit']/span[contains(text(),'I confirm my order')]")
@@ -51,6 +51,9 @@ public class DashBoardPage extends TestBase{
 	@FindBy(xpath="//a[@title='Information']")
 	public WebElement personalInfo;
 
+	
+	@FindBy(xpath="//div[@class='box order-confirmation']")
+	public WebElement orderDetails;
 
 	public DashBoardPage(){
 		PageFactory.initElements(driver, this);

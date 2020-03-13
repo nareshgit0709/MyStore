@@ -1,18 +1,22 @@
 package com.mystore.stepDefinitions;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.mystore.Util.TestBase;
+import com.mystore.Util.TestUtil;
 import com.mystore.pages.DashBoardPage;
 import com.mystore.pages.HomePage;
 import com.mystore.pages.SignInPage;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import junit.framework.Assert;
 
 public class DashBoaardSteps extends TestBase{
 
@@ -27,8 +31,7 @@ public class DashBoaardSteps extends TestBase{
 		 dashboard =new DashBoardPage();
 		 WebDriverWait wait =new WebDriverWait(driver,30);
 		 wait.until(ExpectedConditions.elementToBeClickable(dashboard.tShirtMenu));		
-		 dashboard.tShirtMenu.click();
-		
+		 dashboard.tShirtMenu.click();		
 	 }
 	
 	@When("^Uer click on selected product$")
@@ -43,7 +46,6 @@ public class DashBoaardSteps extends TestBase{
 		dashboard =new DashBoardPage();
 		WebDriverWait wait =new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.elementToBeClickable(dashboard.addProductCart));
-
 		 js = (JavascriptExecutor) driver;		
 		js.executeScript("arguments[0].click();", dashboard.addProductCart);
 	}
@@ -51,16 +53,14 @@ public class DashBoaardSteps extends TestBase{
 	@When("^user click on proceed to checkout$")
 	public void user_click_on_proceed_to_checkout() throws Throwable {		
 		wait.until(ExpectedConditions.elementToBeClickable(dashboard.proceedToCheckOut));
-		dashboard.proceedToCheckOut.click();
-		
+		dashboard.proceedToCheckOut.click();	
 	}
 
 	@When("^user should navigate to summary and click on proceed to checkout$")
 	public void user_should_navigate_to_summary_and_click_on_proceed_to_checkout() throws Throwable {
 		wait.until(ExpectedConditions.elementToBeClickable(dashboard.summaryProceedToCheckOut));
 		 js = (JavascriptExecutor) driver;		
-		js.executeScript("arguments[0].click();", dashboard.summaryProceedToCheckOut);
-		
+		js.executeScript("arguments[0].click();", dashboard.summaryProceedToCheckOut);		
 	}
 
 	@When("^user should navigate to address confirmation stage and click on proceed to checkout$")
@@ -72,30 +72,38 @@ public class DashBoaardSteps extends TestBase{
 
 	@When("^user should navigate to SHIPPING details and click on checkbox and proceed to checkout$")
 	public void user_should_navigate_to_SHIPPING_details_and_click_on_checkbox_and_proceed_to_checkout() throws Throwable {
-		dashboard.termsOfservice.click();		
-		
+		dashboard.termsOfservice.click();				
 		wait.until(ExpectedConditions.elementToBeClickable(dashboard.shoppingProceedToCheckOut));
 		js = (JavascriptExecutor) driver;		
 		js.executeScript("arguments[0].click();", dashboard.shoppingProceedToCheckOut);
-		
-		
 	}
 
 	@When("^select payment method as pay by check$")
 	public void select_payment_method_as_pay_by_check() throws Throwable {
 		wait.until(ExpectedConditions.elementToBeClickable(dashboard.paymenetMode));
 		js = (JavascriptExecutor) driver;		
-		js.executeScript("arguments[0].click();", dashboard.paymenetMode);
-		
-		
+		js.executeScript("arguments[0].click();", dashboard.paymenetMode);		
 	}
 
-	@Then("^user click on I confirm my order$")
+	@And("^user click on I confirm my order$")
 	public void user_click_on_I_confirm_my_order() throws Throwable {
 		wait.until(ExpectedConditions.elementToBeClickable(dashboard.confirmOrder));
 		js = (JavascriptExecutor) driver;		
 		js.executeScript("arguments[0].click();", dashboard.confirmOrder);
+		String[] lines = dashboard.orderDetails.getText().split("\\r?\\n");
+		String order = lines[4].substring(lines[4].lastIndexOf(" ")+1);
+		TestUtil.orderReference = order.substring(0, order.length() - 1);
 	}
-
-
+	@And("^user navigate to Order history page$")
+	public void user_navigate_to_Order_history_page() throws Throwable {
+		driver.navigate().to(prop.getProperty("OrderHistoryPage"));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'"+TestUtil.orderReference+"')]")));
+	}
+	
+	@Then("^Validate the order refference$")
+	public void Validate_the_order_refference() throws Throwable {
+	 String order_ref=driver.findElement(By.xpath("//a[contains(text(),'"+TestUtil.orderReference+"')]")).getText();
+	 Assert.assertEquals(TestUtil.orderReference, order_ref);			
+	}
+	
 }

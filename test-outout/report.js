@@ -32,21 +32,21 @@ formatter.match({
   "location": "LoginStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 31983701040,
+  "duration": 23463642232,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.Naigate_to_signin_page()"
 });
 formatter.result({
-  "duration": 5066927805,
+  "duration": 4770114058,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_log_into_app()"
 });
 formatter.result({
-  "duration": 3371367489,
+  "duration": 4492512811,
   "status": "passed"
 });
 formatter.scenario({
@@ -74,14 +74,19 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "Validate the success massage.",
+  "name": "Validate the success massage",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "validate changed first name on top of the page",
   "keyword": "Then "
 });
 formatter.match({
   "location": "PersonalInfoSteps.user_navigate_to_personal_information_page()"
 });
 formatter.result({
-  "duration": 1724363816,
+  "duration": 1532766585,
   "status": "passed"
 });
 formatter.match({
@@ -94,21 +99,28 @@ formatter.match({
   "location": "PersonalInfoSteps.user_Edit_the_firstname_as(String)"
 });
 formatter.result({
-  "duration": 329884453,
+  "duration": 335767824,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonalInfoSteps.user_click_on_save_button()"
 });
 formatter.result({
-  "duration": 1342483419,
+  "duration": 1360353411,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonalInfoSteps.validate_the_success_massage()"
 });
 formatter.result({
-  "duration": 66008194,
+  "duration": 64467825,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PersonalInfoSteps.validate_changed_first_name_on_top_of_the_page()"
+});
+formatter.result({
+  "duration": 34132138,
   "status": "passed"
 });
 formatter.background({
@@ -137,25 +149,25 @@ formatter.match({
   "location": "LoginStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 43267232426,
+  "duration": 18129368767,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.Naigate_to_signin_page()"
 });
 formatter.result({
-  "duration": 2314532816,
+  "duration": 2157809820,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_log_into_app()"
 });
 formatter.result({
-  "duration": 3394374162,
+  "duration": 2874374827,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 14,
+  "line": 15,
   "name": "Order T-Shirt",
   "description": "",
   "id": "login-feature;order-t-shirt",
@@ -163,111 +175,135 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 15,
+  "line": 16,
   "name": "user click on Tshirt menu",
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
+  "line": 17,
   "name": "Uer click on selected product",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 18,
   "name": "Add procudt to cart",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 19,
   "name": "user click on proceed to checkout",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 20,
   "name": "user should navigate to summary and click on proceed to checkout",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
+  "line": 21,
   "name": "user should navigate to address confirmation stage and click on proceed to checkout",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 22,
   "name": "user should navigate to SHIPPING details and click on checkbox and proceed to checkout",
   "keyword": "And "
 });
 formatter.step({
-  "line": 22,
+  "line": 23,
   "name": "select payment method as pay by check",
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 24,
   "name": "user click on I confirm my order",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "user navigate to Order history page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "Validate the order refference",
   "keyword": "Then "
 });
 formatter.match({
   "location": "DashBoaardSteps.user_click_on_Tshirt_menu()"
 });
 formatter.result({
-  "duration": 3058843241,
+  "duration": 2567136322,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.uer_click_on_selected_product()"
 });
 formatter.result({
-  "duration": 2871619972,
+  "duration": 2112821002,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.add_procudt_to_cart()"
 });
 formatter.result({
-  "duration": 205085362,
+  "duration": 100846633,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_click_on_proceed_to_checkout()"
 });
 formatter.result({
-  "duration": 3093320921,
+  "duration": 2888890428,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_should_navigate_to_summary_and_click_on_proceed_to_checkout()"
 });
 formatter.result({
-  "duration": 1590038139,
+  "duration": 1426496745,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_should_navigate_to_address_confirmation_stage_and_click_on_proceed_to_checkout()"
 });
 formatter.result({
-  "duration": 1276711286,
+  "duration": 1160550162,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_should_navigate_to_SHIPPING_details_and_click_on_checkbox_and_proceed_to_checkout()"
 });
 formatter.result({
-  "duration": 1986165308,
+  "duration": 1534498030,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.select_payment_method_as_pay_by_check()"
 });
 formatter.result({
-  "duration": 1337377838,
+  "duration": 1696761676,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_click_on_I_confirm_my_order()"
 });
 formatter.result({
-  "duration": 2020357662,
+  "duration": 2062763579,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DashBoaardSteps.user_navigate_to_Order_history_page()"
+});
+formatter.result({
+  "duration": 2124419730,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DashBoaardSteps.Validate_the_order_refference()"
+});
+formatter.result({
+  "duration": 59249885,
   "status": "passed"
 });
 });
