@@ -32,21 +32,21 @@ formatter.match({
   "location": "LoginStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 23463642232,
+  "duration": 28101499901,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.Naigate_to_signin_page()"
 });
 formatter.result({
-  "duration": 4770114058,
+  "duration": 2608294306,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_log_into_app()"
 });
 formatter.result({
-  "duration": 4492512811,
+  "duration": 3239174880,
   "status": "passed"
 });
 formatter.scenario({
@@ -86,7 +86,7 @@ formatter.match({
   "location": "PersonalInfoSteps.user_navigate_to_personal_information_page()"
 });
 formatter.result({
-  "duration": 1532766585,
+  "duration": 1342319499,
   "status": "passed"
 });
 formatter.match({
@@ -99,28 +99,28 @@ formatter.match({
   "location": "PersonalInfoSteps.user_Edit_the_firstname_as(String)"
 });
 formatter.result({
-  "duration": 335767824,
+  "duration": 282054559,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonalInfoSteps.user_click_on_save_button()"
 });
 formatter.result({
-  "duration": 1360353411,
+  "duration": 1636809257,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonalInfoSteps.validate_the_success_massage()"
 });
 formatter.result({
-  "duration": 64467825,
+  "duration": 65032315,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonalInfoSteps.validate_changed_first_name_on_top_of_the_page()"
 });
 formatter.result({
-  "duration": 34132138,
+  "duration": 35617773,
   "status": "passed"
 });
 formatter.background({
@@ -149,21 +149,21 @@ formatter.match({
   "location": "LoginStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 18129368767,
+  "duration": 41177039425,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.Naigate_to_signin_page()"
 });
 formatter.result({
-  "duration": 2157809820,
+  "duration": 3139928834,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_log_into_app()"
 });
 formatter.result({
-  "duration": 2874374827,
+  "duration": 3067868620,
   "status": "passed"
 });
 formatter.scenario({
@@ -233,77 +233,77 @@ formatter.match({
   "location": "DashBoaardSteps.user_click_on_Tshirt_menu()"
 });
 formatter.result({
-  "duration": 2567136322,
+  "duration": 3456033935,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.uer_click_on_selected_product()"
 });
 formatter.result({
-  "duration": 2112821002,
+  "duration": 2828021483,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.add_procudt_to_cart()"
 });
 formatter.result({
-  "duration": 100846633,
+  "duration": 127393565,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_click_on_proceed_to_checkout()"
 });
 formatter.result({
-  "duration": 2888890428,
+  "duration": 3607206380,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_should_navigate_to_summary_and_click_on_proceed_to_checkout()"
 });
 formatter.result({
-  "duration": 1426496745,
+  "duration": 1401153201,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_should_navigate_to_address_confirmation_stage_and_click_on_proceed_to_checkout()"
 });
 formatter.result({
-  "duration": 1160550162,
+  "duration": 1427408653,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_should_navigate_to_SHIPPING_details_and_click_on_checkbox_and_proceed_to_checkout()"
 });
 formatter.result({
-  "duration": 1534498030,
+  "duration": 2321530876,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.select_payment_method_as_pay_by_check()"
 });
 formatter.result({
-  "duration": 1696761676,
+  "duration": 1202587724,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_click_on_I_confirm_my_order()"
 });
 formatter.result({
-  "duration": 2062763579,
+  "duration": 2515989946,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.user_navigate_to_Order_history_page()"
 });
 formatter.result({
-  "duration": 2124419730,
+  "duration": 2239077377,
   "status": "passed"
 });
 formatter.match({
   "location": "DashBoaardSteps.Validate_the_order_refference()"
 });
 formatter.result({
-  "duration": 59249885,
+  "duration": 27520422,
   "status": "passed"
 });
 });
